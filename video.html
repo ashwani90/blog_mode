@@ -1,0 +1,23 @@
+<button>Display video</button>
+
+<div class="hidden">
+    <video>
+        <source src="rabbit320.mp4" type="video/mp4">
+        <source src="rabbit320.webm" type="video/webm">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+    </video>
+</div>
+
+<script>
+    btn.onclick = function() {
+        videoBox.setAttribute('class', 'showing');
+    }
+
+    videoBox.onclick = function() {
+        videoBox.setAttribute('class', 'hidden');
+    };
+
+    video.onclick = function() {
+        video.play();
+    };
+</script>
